@@ -1,0 +1,91 @@
+//L'indentation et le formatage attendus du fichier test1.psdo - en minuscules :
+
+--------------------
+debut
+   //LIre le nom
+   ecrire "Entrez votre nom : "
+   lire nom
+
+   //SaiSir l'age
+   afficher "Entrez votre age : "
+   saisir age
+
+   cpt <- 0
+
+   si age < 100   alors
+
+      //compter le nombre d'annees requises pour atteindre 100
+      faire
+         cpt <- cpt + 1
+      tant que      cpt + age < 100
+
+   fin si
+
+   ecrire nom + ", il vous manque " + cpt + " annees avant d'avoir 100 ans !"
+
+
+   TANTQUE <- 3
+   ecrire "SAISIR un mot : "
+   lire mot
+
+   si mot = "FiN" alors
+      afficher mot
+   sinon si mot = "pieuvre" alors
+      afficher "TANT que tante"
+   sinon si mot = "loup" alors
+      mot <- mot + "-garoup"
+      afficher mot
+   sinon
+      afficher "ERREUR" + TANTQUE
+   fin si
+
+fin
+--------------------
+
+
+
+//L'indentation et le formatage attendus du fichier test1.psdo - en majuscules :
+
+--------------------
+DEBUT
+   //LIre le nom
+   ECRIRE "Entrez votre nom : "
+   LIRE nom
+
+   //SaiSir l'age
+   AFFICHER "Entrez votre age : "
+   SAISIR age
+
+   cpt <- 0
+
+   SI age < 100   ALORS
+
+      //compter le nombre d'annees requises pour atteindre 100
+      FAIRE
+         cpt <- cpt + 1
+      TANT QUE      cpt + age < 100
+
+   FIN SI
+
+   ECRIRE nom + ", il vous manque " + cpt + " annees avant d'avoir 100 ans !"
+
+
+   TANTQUE <- 3
+   ECRIRE "SAISIR un mot : "
+   LIRE mot
+
+   SI mot = "FiN" ALORS
+      AFFICHER mot
+   SINON SI mot = "pieuvre" ALORS
+      AFFICHER "TANT que tante"
+   SINON SI mot = "loup" ALORS
+      mot <- mot + "-garoup"
+      AFFICHER mot
+   SINON
+      AFFICHER "ERREUR" + TANTQUE
+   FIN SI
+
+FIN
+--------------------
+
+

@@ -1,0 +1,84 @@
+//L'indentation et le formatage attendus du fichier test2.psdo - en minuscules :
+
+--------------------
+debut
+   afficher "Saisir age : "
+   lire age
+
+   //Selection simple Si
+   si age > 5 alors
+      age <- age + 1
+   fin si
+
+   //Selection Si Sinon
+   si		age > 10 alors
+      age <- age - 4
+   sinon
+      age <- age - 3
+      ecrire age
+   fin si
+
+   //Selection multiple Si Sinon si Sinon
+   si age > 12 alors
+
+      //selection interne
+      si age = 14 alors
+         afficher "WOW"
+      sinon
+         afficher "OK"
+      fin   si
+
+   sinon   si age = 15   alors
+      ecrire "BROUM"
+   sinon si age = 16		alors
+      afficher "Si"
+   sinon
+      ecrire "Fin"
+   fin si
+
+fin
+--------------------
+
+
+
+//L'indentation et le formatage attendus du fichier test2.psdo - en majuscules :
+
+--------------------
+DEBUT
+   AFFICHER "Saisir age : "
+   LIRE age
+
+   //Selection simple Si
+   SI age > 5 ALORS
+      age <- age + 1
+   FIN SI
+
+   //Selection Si Sinon
+   SI		age > 10 ALORS
+      age <- age - 4
+   SINON
+      age <- age - 3
+      ECRIRE age
+   FIN SI
+
+   //Selection multiple Si Sinon si Sinon
+   SI age > 12 ALORS
+
+      //selection interne
+      SI age = 14 ALORS
+         AFFICHER "WOW"
+      SINON
+         AFFICHER "OK"
+      FIN   SI
+
+   SINON   SI age = 15   ALORS
+      ECRIRE "BROUM"
+   SINON SI age = 16		ALORS
+      AFFICHER "Si"
+   SINON
+      ECRIRE "Fin"
+   FIN SI
+
+FIN
+--------------------
+
