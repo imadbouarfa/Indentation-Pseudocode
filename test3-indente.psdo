@@ -1,0 +1,89 @@
+//L'indentation et le formatage attendus du fichier test3.psdo - en minuscules :
+
+--------------------
+debut
+   //initialisation des constantes
+   MSG_SOL_NBR_SEC <- "Veuillez entrer un nombre de secondes : "
+   MSG_ERR_NBR_SEC <- "Erreur. Le nombre de secondes doit etre positif (>= 0)."
+   MSG_FIN <- "Fin normale du programme."
+   NBR_SEC_MIN <- 0
+   NBR_SEC_DANS_MIN <- 60
+   NBR_MIN_DANS_HR <- 60
+   NBR_HRS_DANS_JOUR <- 24
+
+   afficher MSG_SOL_NBR_SEC
+   saisir nbSecondesSaisies
+
+   //Tant QUE l'utilisateur ne quitte pas en entrant 0
+   tant que nbSecondesSaisies /= NBR_SEC_MIN   faire
+
+      //Nombre de secondes invalide (< 0)
+      si nbSecondesSaisies < NBR_SEC_MIN   alors
+         afficher MSG_ERR_NBR_SEC
+
+      sinon
+         nbMinutes <- nbSecondesSaisies / NBR_SEC_DANS_MIN
+         nbSecondes <- nbSecondesSaisies mod NBR_SEC_DANS_MIN
+         nbHeures <- nbMinutes / NBR_MIN_DANS_HR
+         nbMinutes <- nbMinutes mod NBR_MIN_DANS_HR
+         nbJours <- nbHeures / NBR_HRS_DANS_JOUR
+         nbHeures <- nbHeures mod 	NBR_HRS_DANS_JOUR
+
+         afficher nbJours + " jr, " + nbHeures + " hr, " +  nbMinutes + " mn, " +  nbSecondes + " s"
+      fin si
+
+      //redemander un nombre de secondes a transformer
+      afficher MSG_SOL_NBR_SEC
+      saisir nbSecondesSaisies
+
+   fin tant que
+
+   ecrire MSG_FIN
+fin
+--------------------
+
+
+
+//L'indentation et le formatage attendus du fichier test3.psdo - en majuscules :
+
+--------------------
+DEBUT
+   //initialisation des constantes
+   MSG_SOL_NBR_SEC <- "Veuillez entrer un nombre de secondes : "
+   MSG_ERR_NBR_SEC <- "Erreur. Le nombre de secondes doit etre positif (>= 0)."
+   MSG_FIN <- "Fin normale du programme."
+   NBR_SEC_MIN <- 0
+   NBR_SEC_DANS_MIN <- 60
+   NBR_MIN_DANS_HR <- 60
+   NBR_HRS_DANS_JOUR <- 24
+
+   AFFICHER MSG_SOL_NBR_SEC
+   SAISIR nbSecondesSaisies
+
+   //Tant QUE l'utilisateur ne quitte pas en entrant 0
+   TANT QUE nbSecondesSaisies /= NBR_SEC_MIN   FAIRE
+
+      //Nombre de secondes invalide (< 0)
+      SI nbSecondesSaisies < NBR_SEC_MIN   ALORS
+         AFFICHER MSG_ERR_NBR_SEC
+
+      SINON
+         nbMinutes <- nbSecondesSaisies / NBR_SEC_DANS_MIN
+         nbSecondes <- nbSecondesSaisies mod NBR_SEC_DANS_MIN
+         nbHeures <- nbMinutes / NBR_MIN_DANS_HR
+         nbMinutes <- nbMinutes mod NBR_MIN_DANS_HR
+         nbJours <- nbHeures / NBR_HRS_DANS_JOUR
+         nbHeures <- nbHeures mod 	NBR_HRS_DANS_JOUR
+
+         AFFICHER nbJours + " jr, " + nbHeures + " hr, " +  nbMinutes + " mn, " +  nbSecondes + " s"
+      FIN SI
+
+      //redemander un nombre de secondes a transformer
+      AFFICHER MSG_SOL_NBR_SEC
+      SAISIR nbSecondesSaisies
+
+   FIN TANT QUE
+
+   ECRIRE MSG_FIN
+FIN
+--------------------
