@@ -5,7 +5,7 @@
 Le projet est un programme qui permet de corriger l’indentation d’un algorithme écrit en pseudocode se trouvant dans un fichier texte. De plus, le programme permet de formater, soit en majuscules, soit en minuscules, tous les mots réservés du langage pseudocode.
 
 ## Authors
-[@Shaker, Imad](https://gitlab.info.uqam.ca/bouarfa.imad)
+[@Bouarfa, Imad](https://gitlab.info.uqam.ca/bouarfa.imad)
 
 ## Technologies
 * IntelliJ IDEA (https://www.jetbrains.com/idea/)
